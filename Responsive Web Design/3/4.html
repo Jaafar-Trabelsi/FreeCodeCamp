@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="4.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>JS Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+        <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+        <a class="nav-link" href="#Hello_world">Hello world</a>
+        <a class="nav-link" href="#Variables">Variables</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+            <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+            <ul>
+                <li>Client-side JavaScript extends the core language by supplying objects relevant to controlling a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+                <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another, or perform file manipulations on a server.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="What_you_should_already_know">
+            <header>What you should already know</header>
+            <p>This guide assumes you have the following basic background:</p>
+            <ul>
+                <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                <li>Some programming experience, if you want to understand the code examples.</li>
+            </ul>
+            <p>If you need to refresh your memory, take a look at one of the many HTML tutorials on the Web. If you are new to programming, you might want to consider one of the guides linked on the main JavaScript page.</p>
+        </section>
+
+        <section class="main-section" id="JavaScript_and_Java">
+            <header>JavaScript and Java</header>
+            <p>JavaScript and Java are similar in some ways but fundamentally different in others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows Java's expression syntax, naming conventions and basic control-flow constructs, which was the reason why it was renamed from LiveScript to JavaScript.</p>
+            <p>In contrast to Java's compile-time system of classes and inheritance, JavaScript is a dynamic language supporting various ways of defining objects. Functional programming is possible in JavaScript by using its first-class functions. JavaScript is designed to be a lightweight scripting language for developing web applications.</p>
+            <p>There are some key differences to note:</p>
+            <ul>
+                <li>Java is a compiled language; JavaScript is an interpreted language.</li>
+                <li>Java is strongly typed; JavaScript is loosely typed.</li>
+                <li>Java supports class-based inheritance; JavaScript supports prototype-based inheritance.</li>
+                <li>Java requires all variables to be declared; JavaScript does not require explicit variable declaration.</li>
+            </ul>
+            <p>Here's an example of a simple function in JavaScript:</p>
+            <code>function greet(name) {<br>&nbsp;&nbsp;console.log("Hello, " + name + "!");<br>}</code>
+        </section>
+
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <p>To get started with writing JavaScript, open the Console (e.g., F12 in most browsers) and type the following code into it:</p>
+            <code>console.log("Hello, world!");</code>
+            <p>This will display "Hello, world!" in the console. You can then try more complex operations.</p>
+            <p>You can also embed JavaScript directly into your HTML:</p>
+            <code>&lt;script&gt;<br>&nbsp;&nbsp;console.log("Hello from HTML!");<br>&lt;/script&gt;</code>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+            <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and "a" through "z" (lowercase).</p>
+            <p>You can declare a variable using `let`, `const`, or `var`:</p>
+            <code>let x = 10;</code>
+            <code>const PI = 3.14;</code>
+            <code>var name = "John";</code>
+            <ul>
+                <li>`let`: Block-scoped, can be reassigned.</li>
+                <li>`const`: Block-scoped, cannot be reassigned after initial assignment.</li>
+                <li>`var`: Function-scoped, can be reassigned. (Generally less recommended in modern JavaScript).</li>
+            </ul>
+            <p>Here's an example of using variables:</p>
+            <code>let message = "Welcome!";<br>console.log(message);</code>
+        </section>
+    </main>
+</body>
+</html>

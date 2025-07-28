@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+}
+
+#navbar {
+    min-width: 250px;
+    max-width: 300px;
+    border-right: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: auto;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+#navbar header {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:last-of-type {
+    border-bottom: none;
+}
+
+.nav-link:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+    padding-left: 5px;
+}
+
+#main-doc {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.main-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.main-section header {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.main-section p {
+    margin-bottom: 15px;
+}
+
+.main-section ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.main-section li {
+    margin-bottom: 5px;
+}
+
+code {
+    display: block;
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+    white-space: pre-line;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    overflow-x: auto;
+    border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+
+    #navbar {
+        position: relative;
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 10px;
+    }
+
+    #navbar header {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .nav-link {
+        padding: 8px 0;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        padding-top: 10px;
+    }
+
+    .main-section {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+
+    .main-section header {
+        font-size: 1.7em;
+        margin-bottom: 10px;
+    }
+
+    code {
+        font-size: 0.85em;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #navbar header {
+        font-size: 1.5em;
+    }
+
+    .nav-link {
+        font-size: 0.9em;
+    }
+
+    .main-section header {
+        font-size: 1.5em;
+    }
+
+    .main-section p, .main-section li {
+        font-size: 0.9em;
+    }
+}
